@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Imposto.css">
+    <title>Calculadora de Imposto</title>
+</head>
+
+<body>
+    <h1>CALCULADORA DE IMPOSTO</h1>
+    <div class="formulario">
+        <form id="form">
+            <div class="campo">
+                <label> Nome do Produto</label>
+                <input type="text" id="nome"> <br><br>
+            </div>
+
+            <div class="campo">
+                <label> Valor do Produto</label>
+                <input type="text" id="valor"><br><br>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="preencherVetor()">Cadastrar</button>
+                <button type="button" onclick="excluirDado()">Remover Taxa</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="tabela">
+        <table id="tabela">
+            <tr>
+                <th>id</th>
+                <th>Nome do Produto</th>
+                <th>Valor do Produto</th>
+                <th>Imposto</th>
+                <th>% Remoçao </th>
+            </tr>
+        </table>
+    </div>
+    <script src="Imposto.js"></script>
+</body>
+
+</html>
