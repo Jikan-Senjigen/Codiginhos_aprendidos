@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Gorjeta.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+
+<body>
+    <h1>CALCULADORA DE GORJETA</h1>
+    <div class="formulario">
+        <form id="form">
+            <div class="campo">
+                <label> Nome do Cliente</label>
+                <input type="text" id="nome"> <br><br>
+            </div>
+
+            <div class="campo">
+                <label> Valor da Conta</label>
+                <input type="text" id="valor"><br><br>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="preencherVetor()">Cadastrar</button>
+                <button type="button" onclick="excluirDado()">Limpar Lista</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="tabela">
+        <table id="tabela">
+            <tr>
+                <th>id</th>
+                <th>Nome Cliente</th>
+                <th>Valor da Conta</th>
+                <th>Gorjeta</th>
+                <th>% Remoçao </th>
+            </tr>
+        </table>
+    </div>
+    <script src="Gorjeta.js"></script>
+</body>
+
+</html>
